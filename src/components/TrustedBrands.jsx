@@ -34,15 +34,15 @@ export default function TrustedBrands() {
   ];
 
   return (
-    <div className="w-full py-12 flex flex-col items-center justify-center overflow-hidden">
+    <div className="w-full py-12 flex flex-col items-center justify-center overflow-hidden pt-15 gap-8">
       {/* Judul Atas */}
-      <h2 className="text-[#FBFBFB  ] text-sm md:text-base font-medium tracking-wider mb-8 ">
+      <h2 className="text-[#FBFBFB] text-sm md:text-base font-regular tracking-wider mb-4 ">
         Trusted Brands
       </h2>
 
       {/* CONTAINER UTAMA */}
       <div
-        className="relative w-full max-w-5xl flex overflow-hidden pt-4"
+        className="relative w-full max-w-5xl flex overflow-hidden"
         style={{
           maskImage:
             "linear-gradient(to right, transparent, black 15%, black 85%, transparent)",
@@ -57,7 +57,7 @@ export default function TrustedBrands() {
               key={`brand-1-${index}`}
               src={brand.logo}
               alt={brand.name}
-              className="h-7 md:h-9 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:filter-none transition-all duration-500 cursor-pointer"
+              className="h-3 md:h-5 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:filter-none transition-all duration-500 cursor-pointer"
             />
           ))}
         </div>
@@ -72,7 +72,7 @@ export default function TrustedBrands() {
               key={`brand-2-${index}`}
               src={brand.logo}
               alt={brand.name}
-              className="h-7 md:h-9 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:filter-none transition-all duration-500 cursor-pointer"
+              className="h-3 md:h-5 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:filter-none transition-all duration-500 cursor-pointer"
             />
           ))}
         </div>
